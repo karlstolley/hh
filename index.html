@@ -13,7 +13,14 @@
     <h1>Course Title</h1>
     <h2>Course Number(s)</h2>
     <p>Short description...</p>
-    <small><a href="http://karlstolley.com/">Prof. Karl Stolley</a>, Term Year</small>
+    <small><a href="#instructor">Prof. Karl Stolley</a>, Spring 2015</small>
+    <nav id="navigation">
+      <ul>
+        <li><a href="#current">This Week</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#policies">Policies</a></li>
+      </ul>
+    </nav>
   </header>
   <main id="main">
 
@@ -22,9 +29,6 @@
   <ol class="calendar">
     <li class="week">
       <h2>Week: Topic</h2>
-      <div class="news">
-      <h3>News &amp; Notes</h3>
-      </div>
       <ul class="meeting">
         <li class="agenda">
         <h3>Date</h3>
@@ -39,6 +43,9 @@
           </ol>
         </li>
       </ul>
+      <div class="news">
+      <h3>News &amp; Notes</h3>
+      </div>
     </li>
     <li class="week">
       <h2>Week: Topic</h2>
@@ -53,7 +60,7 @@
       <h2>Name</h2>
       <p>Description</p>
       <h3>Goals</h3>
-      <ul class="goals">
+      <ul class="requirements">
         <li>xxx</li>
       </ul>
       <h3>Deliverables &amp; Deadlines</h3>
@@ -69,7 +76,7 @@
   <div id="policies">
   <h1>Policies</h1>
   <h2>Instructor Information</h2>
-  <ul>
+  <ul id="instructor">
     <li>Prof. Karl Stolley</li>
     <li><a href="mailto:karl.stolley@gmail.com">karl.stolley@gmail.com</a></li>
     <li><a href="http://karlstolley.com/">http://karlstolley.com/</a></li>
@@ -223,6 +230,11 @@
   </div>
   </main>
   <footer id="footer">
+    <p>
+      Course and page design by <a href="http://karlstolley.com/">Karl Stolley</a>.
+      <a href="https://creativecommons.org/licenses/by/3.0/us/">Licensed under Creative Commons</a>.
+      <a href="https://github.com/karlstolley/wd/tree/530">Source available on GitHub</a>.
+    </p>
   </footer>
 </div>
 <!--JavaScript-->
