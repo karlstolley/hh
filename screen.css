@@ -33,8 +33,8 @@ li.week, #policies > ul, #policies > ol, #policies p, #projects p, #projects li 
 }
 li.week:nth-child(odd) { background: #DDD; }
 
-#projects li * li, #policies > ol, #policies > ul { margin-left: 2em; }
-#projects li ol li, #policies > ol li { list-style-type: decimal; }
+#projects li * li, #policies > ol, #policies > ul, .meeting li ol { margin-left: 2em; }
+#projects li ol li, #policies > ol li, .meeting li ol li { list-style-type: decimal; }
 #projects li ul li, #policies > ul li { list-style-type: disc; }
 #policies #instructor { margin-left: 0; }
 #policies #instructor li { list-style-type: none; }
