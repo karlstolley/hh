@@ -28,5 +28,24 @@ header h2 {
   font-weight: normal;
   font-size: .9em;
 }
-
+li.week, #policies > ul, #policies > ol, #policies p, #projects p, #projects li ul, #projects li ol {
+  padding: .5em 1em;
+}
 li.week:nth-child(odd) { background: #DDD; }
+
+#projects li * li, #policies > ol, #policies > ul { margin-left: 2em; }
+#projects li ol li, #policies > ol li { list-style-type: decimal; }
+#projects li ul li, #policies > ul li { list-style-type: disc; }
+#policies #instructor { margin-left: 0; }
+#policies #instructor li { list-style-type: none; }
+header small { display: block; }
+header, header small, header h2, div, ol.projects > li {
+  padding-bottom: 1em;
+}
+#main h1 {
+  margin-bottom: .5em;
+}
+
+ul.meeting, #policies h2, #policies h3, #projects h3 {
+  padding-top: .5em;
+}
