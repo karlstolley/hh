@@ -14,6 +14,7 @@ html {
   line-height: 1.25em;
   color: #222;
   background: #F7F7F7;
+  -webkit-text-size-adjust: none;
 }
 h1,h2,h3,h4 {
   font-weight: bold;
@@ -86,4 +87,4 @@ header p + p { margin-top: 1em; font-size: 1.25em; line-height: 1.5em; }
 li.week {
   color: #777;
 }
-#current ~ li.week { color: inherit; }
+#current, #current ~ li.week { color: inherit; }
