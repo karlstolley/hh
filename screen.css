@@ -8,44 +8,82 @@ http://yuilibrary.com/license/
 html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,small{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6,small{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
 
 html {
+  /* Major-Third Modular Scale: http://modularscale.com/scale/?px1=18&px2=&ra1=1.25&ra2=0 */
   font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.125em; /* 18px */
+  line-height: 1.25em;
   color: #222;
-  background: #F3F3F3;
+  background: #F7F7F7;
 }
-h1,h2,h3,h4,nav {
+h1,h2,h3,h4 {
   font-weight: bold;
 }
-nav { font-weight: normal; }
 
+a {
+  text-decoration: none;
+  color: #1D62F0;
+}
 
 
 #page {
-  padding: 1em;
+  padding:  1.25em;
 }
 
-header h2 {
-  color: #999;
+header h2, footer {
+  color: #777;
   font-weight: normal;
-  font-size: .9em;
+  font-size: .8em;
 }
-li.week, #policies > ul, #policies > ol, #policies p, #projects p, #projects li ul, #projects li ol {
-  padding: .5em 1em;
+li.week > ul,
+#policies > ul,
+#policies > ol,
+#policies p,
+#projects p,
+#projects li ul,
+#projects li ol {
+  padding: .625em 1.25em;
 }
-li.week:nth-child(odd) { background: #DDD; }
+li.week {
+  padding-bottom: 1.25em;
+}
+li.week > ul {
+  padding-bottom: 0;
+}
 
-#projects li * li, #policies > ol, #policies > ul, .meeting li ol { margin-left: 2em; }
+#projects li * li,
+#policies > ol,
+#policies > ul,
+.meeting li ol {
+  margin-left: 2.5em;
+}
 #projects li ol li, #policies > ol li, .meeting li ol li { list-style-type: decimal; }
 #projects li ul li, #policies > ul li { list-style-type: disc; }
 #policies #instructor { margin-left: 0; }
 #policies #instructor li { list-style-type: none; }
-header small { display: block; }
-header, header small, header h2, div, ol.projects > li {
-  padding-bottom: 1em;
+header, div, ol.projects > li {
+  padding-bottom: 1.25em;
 }
 #main h1 {
-  margin-bottom: .5em;
+  margin-bottom: .625em;
 }
 
-ul.meeting, #policies h2, #policies h3, #projects h3 {
-  padding-top: .5em;
+#policies h2, #policies h3, #projects h3 {
+  padding-top: .625em;
 }
+
+header p { margin-top: .625em; }
+header p + p { margin-top: 1em; font-size: 1.25em; line-height: 1.5em; }
+@media screen and (min-width: 600px) {
+  li.agenda, li.assigned {
+    width: 45%;
+    vertical-align: top;
+    display: inline-block;
+  }
+  li.assigned {
+    margin-left: 5%;
+  }
+}
+li.week {
+  color: #777;
+}
+#current ~ li.week { color: inherit; }
